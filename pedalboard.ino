@@ -64,7 +64,7 @@ void loop() {
     buttonPrevState = buttonPrevCurrentState;
   }
   if (buttonNextState != buttonNextCurrentState) {
-    switch (buttonPrevCurrentState) {
+    switch (buttonNextCurrentState) {
       case 1:
         MIDI.sendNoteOn(2,127, 1);
         break;
